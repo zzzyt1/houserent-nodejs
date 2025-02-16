@@ -56,6 +56,8 @@ app.use((err, req, res, next) => {
   // 状态描述，判断 err 是 错误对象 还是 字符串
   res.send({ status: 1, message: err instanceof Error ? err.message : err })
 })
+// 在闲鱼购买（10元），链接↓
+// https://www.goofish.com/item?id=798870562481&spm=widle.12011849.Weixin.detail&ut_sk=1.ZEKcXKRsasoDAI2On9uxajZP_12431167_1728823042027.Weixin.detail.798870562481.2490230821
 
 const port = 5000;
 app.listen(port, () => console.log(`Server running on port http://127.0.0.1:${port}`));
